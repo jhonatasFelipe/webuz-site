@@ -1,0 +1,47 @@
+<!-- @dsCard height=288 -->
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  html, body { margin: 0; background: var(--surface-100); }
+  .cv { position: relative; width: 960px; height: 288px; overflow: hidden; background: var(--surface-100); }
+  .cv svg { position: absolute; inset: 0; }
+  .brand { fill: var(--brand); } .deep { fill: var(--brand-deep); } .sun { fill: var(--sun); }
+  .teal { fill: var(--teal); } .tdeep { fill: var(--teal-deep); } .night { fill: var(--night); } .wheel { fill: var(--wheel); } .cream { fill: var(--cream); }
+  .tile { rx: var(--radius-xl); }
+  .pane { rx: var(--radius-md); }
+  .cv-text { position: absolute; left: 48px; bottom: 40px; max-width: 440px; }
+  .cv-name { font: 800 120px/.92 var(--font-display); color: var(--ink); margin: 0; letter-spacing: -1px; }
+  .cv-tag { font: 600 14px/20px var(--font-body); color: var(--ink-muted); margin: 12px 0 0; }
+</style>
+</head>
+<body>
+<div class="cv">
+  <svg width="960" height="288" viewBox="0 0 960 288" aria-hidden="true">
+    <!--
+      blocks: brand 216×256 slab (bleeds top), teal 256×160 (bleeds top/right), sun 104×104, wheel 140×164 (bleeds right/bottom), brand-deep 216×68 bumper (bleeds bottom) — radius-xl corners.
+      arrangement: one tall orange slab with satellites, stacked like the bus body over its bumper; space-3 (12px) gaps, all right of x=500. Orange leads; teal is the one cool block, like the bus windows.
+      pattern: literal motif — the bus's windows and wheels: three radius-md cream window panes on teal, two night wheel discs (radius-pill) with sun hubs on the bumper.
+      steps/radii: space-3 12, space-5 24, space-7 48; radius-xl 24, radius-md 12, radius-pill discs r=30.
+    -->
+    <rect class="brand tile" x="500" y="-24" width="216" height="256" />
+    <rect class="teal tile" x="728" y="-24" width="256" height="160" />
+    <rect class="cream pane" x="752" y="24" width="52" height="88" />
+    <rect class="cream pane" x="816" y="24" width="52" height="88" />
+    <rect class="cream pane" x="880" y="24" width="52" height="88" />
+    <rect class="sun tile" x="728" y="148" width="104" height="104" />
+    <rect class="wheel tile" x="844" y="148" width="140" height="164" />
+    <rect class="deep tile" x="500" y="244" width="216" height="68" />
+    <circle class="night" cx="556" cy="244" r="30" />
+    <circle class="sun" cx="556" cy="244" r="12" />
+    <circle class="night" cx="660" cy="244" r="30" />
+    <circle class="sun" cx="660" cy="244" r="12" />
+  </svg>
+  <div class="cv-text">
+    <p class="cv-name">WeBuz</p>
+    <p class="cv-tag">Conectando cidades, aproximando pessoas.</p>
+  </div>
+</div>
+</body>
+</html>

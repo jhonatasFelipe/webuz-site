@@ -1,0 +1,67 @@
+/* WeBuz — tokens gerados de tokens.json. O site usa o tema claro (:root). */
+:root, [data-theme="light"] {
+  --surface-100: #fbf6ea;
+  --surface-200: #ffffff;
+  --surface-300: #f1e7d3;
+  --line: #e8dcc6;
+  --ink: #2f1e11;
+  --ink-muted: #6b5a4c;
+  --brand: #f1920e;
+  --brand-deep: #d66709;
+  --brand-text: #9e4b06;
+  --on-brand: #2f1e11;
+  --sun: #f9ad0d;
+  --teal: #4ba1b5;
+  --teal-deep: #1b6a7a;
+  --teal-text: #256a7c;
+  --cream: #fdfcef;
+  --night: #2f1e11;
+  --wheel: #5c4d43;
+  --focus: #256a7c;
+  --danger: #b4321f;
+  --shadow-card: 0 1px 0 rgba(47,30,17,0.06), 0 8px 24px rgba(47,30,17,0.07);
+  --shadow-press: 0 3px 0 #d66709;
+  --shadow-phone: 0 24px 48px rgba(47,30,17,0.18);
+}
+[data-theme="dark"] {
+  --surface-100: #1c140d;
+  --surface-200: #281d14;
+  --surface-300: #140e09;
+  --line: #3f3024;
+  --ink: #f8efe1;
+  --ink-muted: #c4b3a0;
+  --brand: #f39a1e;
+  --brand-deep: #d66709;
+  --brand-text: #f6a94a;
+  --on-brand: #2f1e11;
+  --sun: #f9ad0d;
+  --teal: #6cbdd0;
+  --teal-deep: #1b6a7a;
+  --teal-text: #8fd0df;
+  --cream: #fdfcef;
+  --night: #120c07;
+  --wheel: #6e5f53;
+  --focus: #8fd0df;
+  --danger: #f08a74;
+  --shadow-card: 0 1px 0 rgba(0,0,0,0.4), 0 8px 24px rgba(0,0,0,0.35);
+  --shadow-press: 0 3px 0 #a84f05;
+  --shadow-phone: 0 24px 48px rgba(0,0,0,0.5);
+}
+:root {
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 48px;
+  --space-8: 64px;
+  --space-9: 96px;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+  --radius-pill: 999px;
+  --font-display: "Baloo 2", "Nunito", system-ui, sans-serif;
+  --font-body: "Nunito", system-ui, -apple-system, "Segoe UI", sans-serif;
+}

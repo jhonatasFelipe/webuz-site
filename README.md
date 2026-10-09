@@ -21,6 +21,10 @@ robots.txt, sitemap.xml
 - **Ícones:** [Font Awesome Free 6.7.2](https://fontawesome.com), embutidos como SVG só os usados (licença CC BY 4.0). Nenhum arquivo extra é baixado.
 - **Perguntas frequentes:** abrem com `<details>` nativo do navegador.
 
+## Design
+
+Toda a referência de design — guia da marca, cores, tipografia, espaçamentos, ícones, componentes, mascote e tokens (`tokens.json` / `tokens.css`) — está em [`docs/design/`](docs/design/README.md).
+
 ## Rodar localmente
 
 Abra `index.html` no navegador, ou sirva a pasta:
