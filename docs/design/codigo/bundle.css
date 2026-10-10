@@ -98,7 +98,19 @@ html, body { background: var(--surface-100); color: var(--ink); font-family: var
 .wb-phone-notch { position: absolute; top: 10px; left: 50%; transform: translateX(-50%); width: 84px; height: 20px; border-radius: var(--radius-pill); background: var(--night); }
 
 /* Site chrome */
-.wb-header { display: flex; align-items: center; gap: var(--space-6); padding: var(--space-4) var(--space-7); background: var(--surface-200); border-bottom: 1px solid var(--line); }
+.wb-header { display: flex; align-items: center; gap: var(--space-6); padding: var(--space-4) var(--space-7); background: var(--surface-200); border-bottom: 1px solid var(--line); position: sticky; top: 0; z-index: 50; }
+/* Fixed on scroll: translucent + blur so the page shows through; solid again at the top */
+@supports (backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px)) {
+  .wb-header { background: color-mix(in srgb, var(--surface-200) 82%, transparent); -webkit-backdrop-filter: saturate(160%) blur(12px); backdrop-filter: saturate(160%) blur(12px); }
+}
+@supports (animation-timeline: scroll()) {
+  .wb-header { animation: wb-header-glass linear both; animation-timeline: scroll(root); animation-range: 0 120px; }
+  @keyframes wb-header-glass {
+    from { background-color: var(--surface-200); box-shadow: none; }
+    to { background-color: color-mix(in srgb, var(--surface-200) 78%, transparent); box-shadow: 0 6px 20px rgba(47,30,17,0.08); }
+  }
+}
+html { scroll-padding-top: 96px; }
 .wb-brand { display: inline-flex; align-items: center; gap: var(--space-2); text-decoration: none; color: var(--ink); font: 800 26px/1 var(--font-display); }
 .wb-brand img { width: 44px; height: 44px; object-fit: contain; }
 .wb-nav { display: flex; gap: var(--space-5); margin-left: auto; }
