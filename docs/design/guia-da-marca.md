@@ -20,7 +20,7 @@ WeBuz é um app de mobilidade urbana colaborativo para quem anda de ônibus: que
 ## Cor
 
 - **Quente, com um toque de azul.** O laranja do ônibus lidera; o azul-petróleo das janelas entra em dose pequena para dar frescor. Proporção: fundo creme, bastante `brand`, pouco `teal`.
-- Página em `surface-100` (creme), cards em `surface-200`, faixas alternadas em `surface-300`.
+- **Fundos de seção alternam branco e pastel:** `surface-100` (branco) e um pastel — `surface-band` (creme claro) ou `surface-band-alt` (azul-petróleo bem claro), variando entre eles — nunca duas seções brancas nem duas pastel seguidas. Como o cabeçalho é branco, o hero e as aberturas das páginas internas são pastel; a seção seguinte é branca, e assim por diante. Cards em `surface-200`; `surface-300` só em detalhes pequenos (trilhos, abas).
 - Texto em `ink`; secundário em `ink-muted`. Laranja como texto só em `brand-text` — `brand` puro não passa contraste em texto.
 - `brand` é a cor da ação e da marca: botão primário, ícones em círculo, sobretítulos, barra de nível. Texto sobre `brand`, `sun` e `teal` é sempre `on-brand` (marrom), nunca branco.
 - **Onde entra o azul:** a camada de base da `WaveDivider`, o círculo atrás do celular no hero, o mapa, a parte concluída da barra, os checks, um bloco por página em `teal-deep` com texto `cream` (Comunidade) e ícones alternados nas grades. Não use `teal` em fundos de seção nem em títulos.

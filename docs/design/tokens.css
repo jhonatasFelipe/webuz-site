@@ -1,7 +1,9 @@
 /* WeBuz — tokens gerados de tokens.json. O site usa o tema claro (:root). */
 :root, [data-theme="light"] {
-  --surface-100: #fbf6ea;
+  --surface-100: #ffffff;
   --surface-200: #ffffff;
+  --surface-band: #fdf5e8;
+  --surface-band-alt: #eaf5f7;
   --surface-300: #f1e7d3;
   --line: #e8dcc6;
   --ink: #2f1e11;
@@ -26,6 +28,8 @@
 [data-theme="dark"] {
   --surface-100: #1c140d;
   --surface-200: #281d14;
+  --surface-band: #17110b;
+  --surface-band-alt: #0f1a1d;
   --surface-300: #140e09;
   --line: #3f3024;
   --ink: #f8efe1;

@@ -4,7 +4,7 @@ Toda página segue o mesmo esqueleto:
 
 1. `SiteHeader` com o item da página marcado (`aria-current="page"`).
 2. Abertura: `Hero` (só no Início) ou `PageIntro` (trilha "Início / página", sobretítulo, título com destaque laranja e mascote sobre um círculo azul suave).
-3. Seções alternando fundo `surface-100` e faixa `surface-300` (`.s-sec` / `.s-sec.s-band`).
+3. Seções alternando branco e pastel — nunca duas iguais seguidas (`.s-sec` branco; `.s-sec.s-band` creme ou `.s-sec.s-band-alt` azul claro).
 4. `FinalCta` → `WaveDivider` (`.s-wave-band`) → `SiteFooter`.
 
 ## `index.html`

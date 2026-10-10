@@ -2,15 +2,17 @@
 
 **Quente, com um toque de azul.** O laranja do ônibus lidera; o azul-petróleo das janelas entra em dose pequena para dar frescor. Proporção: fundo creme, bastante laranja (`brand`), pouco azul (`teal`).
 
-<span title="brand" style="display:inline-block;width:56px;height:56px;border-radius:12px;background:#f1920e;margin:0 6px 6px 0;border:1px solid #0001"></span><span title="brand-deep" style="display:inline-block;width:56px;height:56px;border-radius:12px;background:#d66709;margin:0 6px 6px 0;border:1px solid #0001"></span><span title="sun" style="display:inline-block;width:56px;height:56px;border-radius:12px;background:#f9ad0d;margin:0 6px 6px 0;border:1px solid #0001"></span><span title="teal" style="display:inline-block;width:56px;height:56px;border-radius:12px;background:#4ba1b5;margin:0 6px 6px 0;border:1px solid #0001"></span><span title="teal-deep" style="display:inline-block;width:56px;height:56px;border-radius:12px;background:#1b6a7a;margin:0 6px 6px 0;border:1px solid #0001"></span><span title="night" style="display:inline-block;width:56px;height:56px;border-radius:12px;background:#2f1e11;margin:0 6px 6px 0;border:1px solid #0001"></span><span title="surface-100" style="display:inline-block;width:56px;height:56px;border-radius:12px;background:#fbf6ea;margin:0 6px 6px 0;border:1px solid #0001"></span><span title="surface-300" style="display:inline-block;width:56px;height:56px;border-radius:12px;background:#f1e7d3;margin:0 6px 6px 0;border:1px solid #0001"></span><span title="ink" style="display:inline-block;width:56px;height:56px;border-radius:12px;background:#2f1e11;margin:0 6px 6px 0;border:1px solid #0001"></span>
+<span title="brand" style="display:inline-block;width:56px;height:56px;border-radius:12px;background:#f1920e;margin:0 6px 6px 0;border:1px solid #0001"></span><span title="brand-deep" style="display:inline-block;width:56px;height:56px;border-radius:12px;background:#d66709;margin:0 6px 6px 0;border:1px solid #0001"></span><span title="sun" style="display:inline-block;width:56px;height:56px;border-radius:12px;background:#f9ad0d;margin:0 6px 6px 0;border:1px solid #0001"></span><span title="teal" style="display:inline-block;width:56px;height:56px;border-radius:12px;background:#4ba1b5;margin:0 6px 6px 0;border:1px solid #0001"></span><span title="teal-deep" style="display:inline-block;width:56px;height:56px;border-radius:12px;background:#1b6a7a;margin:0 6px 6px 0;border:1px solid #0001"></span><span title="night" style="display:inline-block;width:56px;height:56px;border-radius:12px;background:#2f1e11;margin:0 6px 6px 0;border:1px solid #0001"></span><span title="surface-100" style="display:inline-block;width:56px;height:56px;border-radius:12px;background:#ffffff;margin:0 6px 6px 0;border:1px solid #0001"></span><span title="surface-300" style="display:inline-block;width:56px;height:56px;border-radius:12px;background:#f1e7d3;margin:0 6px 6px 0;border:1px solid #0001"></span><span title="ink" style="display:inline-block;width:56px;height:56px;border-radius:12px;background:#2f1e11;margin:0 6px 6px 0;border:1px solid #0001"></span>
 
 ## Tokens
 
 | Token | Claro | Escuro | Uso |
 |---|---|---|---|
-| `surface-100` | `#fbf6ea` | `#1c140d` | Fundo da página — o creme quente das telas do app. |
+| `surface-100` | `#ffffff` | `#1c140d` | Fundo da página e das seções brancas. Seções alternam branco e pastel (surface-band ou surface-band-alt) — nunca duas iguais seguidas. |
 | `surface-200` | `#ffffff` | `#281d14` | Cards, listas, campos e o cabeçalho do site. |
-| `surface-300` | `#f1e7d3` | `#140e09` | Faixas de seção alternadas e o trilho da barra de progresso. |
+| `surface-band` | `#fdf5e8` | `#17110b` | Pastel creme claro — fundo de seção. Alterna com seções brancas (surface-100); nunca duas seções pastel ou duas brancas seguidas. Hero e aberturas das páginas internas são pastel, porque o cabeçalho é branco. |
+| `surface-band-alt` | `#eaf5f7` | `#0f1a1d` | Pastel azul-petróleo bem claro — segundo tom de fundo de seção, para variar entre os pastéis (ex.: creme → branco → azul claro → branco → creme). |
+| `surface-300` | `#f1e7d3` | `#140e09` | Detalhes pequenos de interface: trilho da barra de progresso, fundo das abas, ícones 'soft'. Não usar como fundo de seção. |
 | `line` | `#e8dcc6` | `#3f3024` | Divisórias entre linhas de lista e bordas de cards. Decorativa: nunca a única pista de um controle. |
 | `ink` | `#2f1e11` | `#f8efe1` | Texto principal e o traço do mascote, em surface-100, surface-200 e surface-300 (14:1+ nos dois temas). |
 | `ink-muted` | `#6b5a4c` | `#c4b3a0` | Texto secundário: legendas, pontos ao lado do nome, metadados. Em surface-100 e surface-200 (6:1+). |
@@ -30,6 +32,8 @@
 
 ## Regras
 
+- **Fundos de seção alternam branco e pastel.** Branco = `surface-100`; pastel = `surface-band` (creme claro) ou `surface-band-alt` (azul-petróleo bem claro), variando entre os dois. Nunca duas seções brancas nem duas pastel seguidas. O cabeçalho é branco, então o hero e as aberturas das páginas internas são pastel. Classes: `.s-sec` (branco), `.s-sec.s-band` (creme), `.s-sec.s-band-alt` (azul claro); a onda abaixo de uma seção pastel leva `.s-wave-band` ou `.s-wave-band-alt` no mesmo tom.
+- `surface-300` não é fundo de seção: só detalhes pequenos (trilho da barra, abas, ícones 'soft').
 - Texto sobre `brand`, `sun` e `teal` é sempre `on-brand` (marrom). **Branco sobre laranja não passa contraste** (2,3:1).
 - Laranja como texto só em `brand-text`; `brand` puro é para preenchimentos.
 - Onde entra o azul: camada de base da onda, círculo atrás do celular no hero, mapa, barra concluída, checks, ícones alternados nas grades e **um** bloco por página em `teal-deep` (Comunidade). Não usar `teal` em fundos de seção nem em títulos.
@@ -43,15 +47,15 @@ Mínimo 4,5:1 para texto comum, 3:1 para texto ≥ 24px ou negrito ≥ 19px, íc
 
 | Texto | Fundo | Claro | Escuro |
 |---|---|---|---|
-| `ink` | `surface-100` | 14.8:1 | 15.9:1 |
+| `ink` | `surface-100` | 16.0:1 | 15.9:1 |
 | `ink` | `surface-300` | 13.0:1 | 16.8:1 |
-| `ink-muted` | `surface-100` | 6.1:1 | 8.9:1 |
+| `ink-muted` | `surface-100` | 6.6:1 | 8.9:1 |
 | `ink-muted` | `surface-200` | 6.6:1 | 8.1:1 |
 | `ink-muted` | `surface-300` | 5.4:1 | 9.4:1 |
-| `brand-text` | `surface-100` | 5.6:1 | 9.3:1 |
+| `brand-text` | `surface-100` | 6.1:1 | 9.3:1 |
 | `brand-text` | `surface-200` | 6.1:1 | 8.4:1 |
 | `brand-text` | `surface-300` | 4.9:1 | 9.8:1 |
-| `teal-text` | `surface-100` | 5.7:1 | 10.6:1 |
+| `teal-text` | `surface-100` | 6.1:1 | 10.6:1 |
 | `teal-text` | `surface-200` | 6.1:1 | 9.6:1 |
 | `on-brand` | `brand` | 6.7:1 | 7.2:1 |
 | `on-brand` | `sun` | 8.4:1 | 8.4:1 |

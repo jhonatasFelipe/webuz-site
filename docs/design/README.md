@@ -18,7 +18,8 @@ Arquivos de máquina: [`tokens.json`](tokens.json) (fonte única dos valores) e 
 
 ## Resumo rápido
 
-- **Cores:** laranja `#f1920e` (ação/marca), azul-petróleo `#4ba1b5` (toque de frescor), creme `#fbf6ea` (fundo), marrom `#2f1e11` (texto e traço do mascote).
+- **Cores:** laranja `#f1920e` (ação/marca), azul-petróleo `#4ba1b5` (toque de frescor), marrom `#2f1e11` (texto e traço do mascote).
+- **Fundos:** seções alternam branco e pastel (creme `#fdf5e8` ou azul claro `#eaf5f7`), nunca duas iguais seguidas.
 - **Fontes:** Baloo 2 nos títulos, Nunito no texto.
 - **Forma:** tudo arredondado — botões 12px, cards 16px, painéis 24px.
 - **Voz:** próxima, otimista, comunitária e direta; fala com "você"; verbo primeiro nos botões; sem emoji.
